@@ -1,0 +1,40 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'java'
+}
+
+group 'com.vanexam.tutorial'
+version '1.0-SNAPSHOT'
+
+ext {
+    dropwizardVersion = '2.1.1'
+}
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    implementation group: 'io.dropwizard', name: 'dropwizard-core', version: '2.1.1'
+    implementation group: 'io.dropwizard', name: 'dropwizard-hibernate', version: '2.1.1'
+    implementation group: 'io.dropwizard', name: 'dropwizard-views-mustache', version: '2.1.1'
+    implementation group: 'io.dropwizard', name: 'dropwizard-forms', version: '2.1.1'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+shadowJar {
+    mergeServiceFiles()
+    exclude 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.SF'
+    manifest {
+        attributes 'Main-Class': 'org.mathgenerator.Main'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
