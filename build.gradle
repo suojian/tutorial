@@ -22,7 +22,7 @@ dependencies {
     implementation group: 'io.dropwizard', name: 'dropwizard-hibernate', version: '2.1.1'
     implementation group: 'io.dropwizard', name: 'dropwizard-views-mustache', version: '2.1.1'
     implementation group: 'io.dropwizard', name: 'dropwizard-forms', version: '2.1.1'
-    implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
