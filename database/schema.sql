@@ -57,3 +57,41 @@ CREATE TABLE `block_status` (
   `blocked_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE `volunteer_information` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `status` tinyint(4) NOT NULL DEFAULT 0,
+  `raw_data` longtext DEFAULT NULL,
+  `source_publish_time` timestamp NULL DEFAULT NULL,
+  `crawel_time` timestamp NULL DEFAULT NULL,
+  `last_update_time` timestamp NULL DEFAULT NULL,
+  `publish_time` timestamp NULL DEFAULT NULL,
+  `source_website_id` int(11) DEFAULT NULL,
+  `source_url` varchar(500) DEFAULT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `icon` varchar(100) DEFAULT NULL,
+  `images` varchar(2000) DEFAULT NULL,
+  `region` varchar(200) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `map` varchar(300) DEFAULT NULL,
+  `duration` varchar(200) DEFAULT NULL,
+  `description` varchar(2000) DEFAULT NULL,
+  `contact` varchar(200) DEFAULT NULL,
+  `categories` varchar(1000) DEFAULT NULL,
+  `end_time` timestamp NULL DEFAULT NULL,
+  `note` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `source_website` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `home_url` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name_UNIQUE` (`name`),
+  UNIQUE KEY `home_url_UNIQUE` (`home_url`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
