@@ -1,0 +1,38 @@
+.button {
+    cursor: pointer;
+    border: none;
+    background-color: #efefef;
+    padding: 0.75rem 5vw;
+    border-radius: 30vw;
+    font-weight: bold;
+    margin: 1rem auto 0;
+    font-size: min(4vw,1.6rem);
+    display: inline-block;
+    position: relative;
+}
+
+.button:hover,
+.button:active {
+    background-color: #cccccc;
+}
+
+.badge {
+    background-color: #fa3e3e;
+    border-radius: 50%;
+    color: white;
+
+    padding: max(0.25rem,0.6vw) max(0.4rem,1vw);
+
+
+    font-size: min(2.5vw,1.1rem);
+
+    position: absolute; /* Position the badge within the relatively positioned button */
+    top: -0.7vw;
+    right: -0.7vw;
+}
+
+
+.button:hover .badge,
+.button:active .badge {
+    background-color: #92320c;
+}

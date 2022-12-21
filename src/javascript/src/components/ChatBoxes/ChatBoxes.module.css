@@ -1,0 +1,11 @@
+.chatBoxes{
+    width: min(27rem,70vw);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 38rem;
+    float: left;
+    margin-top: 10px;
+    border-right-style: solid;
+    border-color: lightgrey;
+    border-width: 0.5px;
+}
