@@ -1,0 +1,83 @@
+
+.container{
+    overflow:hidden;
+    width:auto;
+}
+.header{
+    background-color: #f8f8f8;
+    border-radius: 0 14px 0 0;
+    display: flex;
+}
+.username{
+    margin: 0 20px 2px;
+    font-size: max(3vw,1rem);
+    height: 70px;
+    line-height: 70px;
+    width: 60%;
+    overflow: hidden;
+}
+.messages{
+    height: 31rem;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.block{
+    cursor: pointer;
+    border: none;
+    background-color: #efefef;
+    padding: 0.75rem 3vw;
+    border-radius: 30vw;
+    font-weight: bold;
+    margin: auto;
+    font-size: min(3vw,1.2rem);
+    display: inline-block;
+    position: relative;
+}
+.writeChat{
+    display: flex;
+    flex-direction: row;
+    height: 3.3rem;
+    border-top-style: solid;
+    border-top-color: lightgrey;
+    border-width: 1px;
+}
+
+.emoji{
+    width: 2.5rem;
+    margin: auto 5px;
+    cursor: pointer;
+    border-radius:50%;
+}
+
+.emoji:hover{
+    background-color: lightgrey;
+}
+
+.back{
+    margin: auto;
+    width: calc(4vw + 10px);
+
+}
+
+.writeMessage{
+    border:none;
+    width: 70%;
+    height: 1.5rem;
+    margin: auto 1rem;
+    padding: 10px;
+    font-size: calc(1vw + 10px);
+}
+.send{
+    border-radius: 50%;
+    background-color: lightblue;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    width:2.8rem;
+}
+.send:hover{
+    background-color: #9ec4d2;
+
+}

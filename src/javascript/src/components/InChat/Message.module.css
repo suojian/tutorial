@@ -1,0 +1,27 @@
+.message{
+    display: flex;
+    flex-direction: row;
+}
+.profile{
+    width:4vw;
+    height:4vw;
+    min-height: 35px;
+    min-width:35px;
+}
+.content{
+    max-width: 40%;
+    border-radius: 1rem;
+    font-size: max(1.3vw,1rem);
+    padding: 10px;
+    margin: auto 0;
+    word-wrap: break-word;
+}
+.fromMe{
+    flex-direction: row-reverse;
+}
+.pFromMe{
+    background-color: #23e123;
+}
+.pFromOther{
+    background-color: #cccccc;
+}
