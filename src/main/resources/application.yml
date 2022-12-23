@@ -3,10 +3,10 @@ server:
     - type: http
       port: 8080
 database:
-  driverClass: org.postgresql.Driver
-  user: suojian
-  password: E2omZXaL6P_LTUX_9RGy3g
-  url: jdbc:postgresql://free-tier4.aws-us-west-2.cockroachlabs.cloud:26257/mathapp?sslmode=verify-full&options=--cluster%3Dclustersj-2342
+  driverClass: com.mysql.jdbc.Driver
+  user: root
+  password: root
+  url: jdbc:mysql://localhost:3306/tutorial
 #  url: jdbc:postgresql://free-tier4.aws-us-west-2.cockroachlabs.cloud:26257/mathapp?sslmode=verify-full&options=--cluster%3Dclustersj-2342&sslrootcert=/app/app/root.crt
   properties:
     charSet: UTF-8
